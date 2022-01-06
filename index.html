@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="logo-header">
+           <span class="logo">CAMPUS</span><span class="logo">PLACEMENT</span><span class="logo">ASSISTANT</span>  
+        </h1>
+    </div>
+    <div class="container">
+        <div class="navigation">
+             <h3 class="heading">CAMPUS PLACEMENT ASSISTANT</h3>
+             <!-- <img class="img" src="https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" > -->
+
+        </div>
+        
+
+        <form id="signin" class="flex-box">
+            <h1>Signin</h1>
+            <p>select the user type</p>
+           <select class="drop-box" id="userType" onchange="getUserType(this)">
+               <option >Oragnisation</option>
+               <option>student</option>
+           </select> 
+          
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" minlength="8" required />
+            <input type="submit" value="Submit" class="cursor-pointer active-on-click" />
+            <a id="gotoSignupLink" class="link cursor-pointer active-on-click">Create a new account?</a>
+        </form>
+
+        <form id="signup" class="flex-box">
+            <h1>Signup</h1>
+            <p>select the user type</p>
+            <select class="drop-box" id="userType" onchange="getUserType(this)">
+                
+                  <option >Oragnisation</option>
+                <option>student</option>
+            </select>
+            <input type="text" placeholder="Username" required/>
+            <input type="email" placeholder="Email"required/>
+            <input type="password" placeholder="Password" minlength="8" id="signUpPwd" required/>
+            <input type="password" placeholder="Conform Password" minlength="8" id="conformPwd" required/>
+            <input type="submit" class="cursor-pointer active-on-click" value="Submit" >
+            <a id="gotoSigninLink" class="link cursor-pointer active-on-click">Already have an account?</a>
+            </form>
+        
+
+    </div> 
+</body>
+<script  src="index.js"></script>
+
+</html>
